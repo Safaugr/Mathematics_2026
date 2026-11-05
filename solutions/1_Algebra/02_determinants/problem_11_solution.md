@@ -1,5 +1,22 @@
 # Exercise 11. Shortening the Calculation with Row Operations
 
+## Question
+
+Compute
+
+$$
+\det
+\begin{pmatrix}
+1 & 2 & 3 \\
+1 & 3 & 4 \\
+1 & 4 & 6 \\
+\end{pmatrix}
+$$
+
+by first performing row operations that create as many zeros as possible. State which operations do not change the determinant.
+
+## Solution
+
 The given matrix is
 
 $$
@@ -11,7 +28,7 @@ A=
 \end{pmatrix}.
 $$
 
-## 1. Create zeros in the first column
+### 1. Create zeros in the first column
 
 Apply
 
@@ -34,7 +51,7 @@ $$
 \end{pmatrix}.
 $$
 
-## 2. Obtain an upper triangular matrix
+### 2. Obtain an upper triangular matrix
 
 Using the current second row, apply
 
@@ -58,7 +75,7 @@ $$
 \det A=1\cdot1\cdot1=1.
 $$
 
-## 3. Verification
+### 3. Verification
 
 Expanding the original determinant along the first row gives
 

@@ -1,5 +1,27 @@
 # Exercise 7. Identity Matrix, Zero Matrix, and Powers
 
+## Question
+
+For
+
+$$
+A=
+\begin{pmatrix}
+2 & 1 \\
+0 & 2 \\
+\end{pmatrix}
+$$
+
+compute
+
+$$
+AI,\qquad IA,\qquad A+0,\qquad A^2,\qquad A^3.
+$$
+
+Explain the roles of the matrices $I$ and $0$, and describe the pattern you observe in successive powers of $A$.
+
+## Solution
+
 The given matrix is
 
 $$
@@ -26,7 +48,7 @@ I=
 \end{pmatrix}.
 $$
 
-## 1. Multiplication by the identity matrix
+### 1. Multiplication by the identity matrix
 
 $$
 AI=
@@ -58,7 +80,7 @@ $$
 
 The identity matrix is the neutral element for matrix multiplication.
 
-## 2. Addition of the zero matrix
+### 2. Addition of the zero matrix
 
 $$
 A+0=
@@ -75,7 +97,7 @@ $$
 
 The zero matrix is the neutral element for matrix addition.
 
-## 3. Computing the square
+### 3. Computing the square
 
 A matrix power uses matrix multiplication, not entry-by-entry powers.
 
@@ -91,7 +113,7 @@ A^2=AA=
 \end{pmatrix}.
 $$
 
-## 4. Computing the cube
+### 4. Computing the cube
 
 $$
 A^3=A^2A=
@@ -105,7 +127,7 @@ A^3=A^2A=
 \end{pmatrix}.
 $$
 
-## 5. Pattern in successive powers
+### 5. Pattern in successive powers
 
 The diagonal entries are $2,4,8$, and the lower-left entry remains zero.
 The upper-right entries are $1,4,12$.
@@ -120,7 +142,7 @@ A^n=
 \end{pmatrix}.
 $$
 
-## Verification of the pattern
+### Verification of the pattern
 
 For $n=1$, the formula gives A.
 

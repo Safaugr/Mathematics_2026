@@ -1,5 +1,22 @@
 # Exercise 13. Determinant by Elimination
 
+## Question
+
+Compute the determinant
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 5 & 7 \\
+1 & 0 & 2 \\
+\end{pmatrix}
+$$
+
+using elimination. Record the effect of every row operation used on the value of the determinant.
+
+## Solution
+
 The given matrix is
 
 $$
@@ -11,7 +28,7 @@ A=
 \end{pmatrix}.
 $$
 
-## 1. Eliminate the first entry of row 2
+### 1. Eliminate the first entry of row 2
 
 Apply
 
@@ -31,7 +48,7 @@ $$
 
 Adding a multiple of another row preserves the determinant.
 
-## 2. Eliminate the first entry of row 3
+### 2. Eliminate the first entry of row 3
 
 Apply
 
@@ -51,7 +68,7 @@ $$
 
 The determinant is unchanged.
 
-## 3. Eliminate the second entry of row 3
+### 3. Eliminate the second entry of row 3
 
 Using the current second row, apply
 
@@ -77,7 +94,7 @@ $$
 
 This operation also preserves the determinant.
 
-## 4. Compute the determinant
+### 4. Compute the determinant
 
 The final matrix is upper triangular:
 
@@ -88,7 +105,7 @@ $$
 No row swaps or row scalings were used,
 so no correction factor is needed.
 
-## Verification
+### Verification
 
 Expanding the original determinant along the first row gives
 

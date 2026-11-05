@@ -1,5 +1,25 @@
 # Exercise 9. Area and the Determinant
 
+## Question
+
+The vectors
+
+$$
+u=
+\begin{pmatrix}
+3 \\
+1 \\
+\end{pmatrix},\qquad v=
+\begin{pmatrix}
+1 \\
+4 \\
+\end{pmatrix}
+$$
+
+span a parallelogram. Compute its area using a determinant. Then reverse the order of the vectors and explain what changes in the determinant and what does not change in the area.
+
+## Solution
+
 The given vectors are
 
 $$
@@ -16,7 +36,7 @@ v=
 \end{pmatrix}.
 $$
 
-## 1. Area of the parallelogram
+### 1. Area of the parallelogram
 
 Place the vectors in the columns of a matrix:
 
@@ -42,7 +62,7 @@ $$
 
 Therefore, the parallelogram has area 11 square units.
 
-## 2. Reversing the order of the vectors
+### 2. Reversing the order of the vectors
 
 Reversing the vectors swaps the columns:
 
@@ -69,7 +89,7 @@ $$
 The sign records orientation. Swapping the vectors
 reverses orientation without changing the parallelogram's area.
 
-## 3. Verification
+### 3. Verification
 
 Treat the vectors as three-dimensional vectors
 with zero third coordinate. Their cross product is

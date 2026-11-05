@@ -1,5 +1,24 @@
 # Exercise 3. Swapping Two Rows
 
+## Question
+
+For
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 & 0 \\
+0 & 3 & 1 \\
+2 & 1 & 1 \\
+\end{pmatrix}
+$$
+
+compute $\det A$. Then form a matrix $B$ by swapping the first and second rows of $A$.
+
+First predict $\det B$ using a determinant property, and then verify your prediction by calculation.
+
+## Solution
+
 The given matrix is
 
 $$
@@ -11,7 +30,7 @@ A=
 \end{pmatrix}.
 $$
 
-## 1. Computing the determinant of A
+### 1. Computing the determinant of A
 
 Expand along the first row, using the signs +, -, +:
 
@@ -22,7 +41,7 @@ $$
 =6.
 $$
 
-## 2. Swapping the first two rows
+### 2. Swapping the first two rows
 
 The new matrix is
 
@@ -42,7 +61,7 @@ $$
 \det B=-\det A=-6.
 $$
 
-## 3. Verification by direct calculation
+### 3. Verification by direct calculation
 
 Expand B along its first row:
 
@@ -55,7 +74,7 @@ $$
 
 This agrees with the prediction.
 
-## Conclusion
+### Conclusion
 
 $$
 \det A=6,\qquad \det B=-6.

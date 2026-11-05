@@ -1,5 +1,28 @@
 # Exercise 8. Row Operations and Their Reversibility
 
+## Question
+
+For
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 & -1 \\
+2 & 4 & 1 \\
+-1 & 1 & 3 \\
+\end{pmatrix}
+$$
+
+perform, in order:
+
+1. $R_2\leftarrow R_2-2R_1$,
+2. $R_3\leftarrow R_3+R_1$,
+3. interchange $R_2$ and $R_3$.
+
+Write the matrix after each step. Then, for each of the three operations, state an operation that reverses it.
+
+## Solution
+
 The given matrix is
 
 $$
@@ -11,7 +34,7 @@ A=
 \end{pmatrix}.
 $$
 
-## 1. First row operation
+### 1. First row operation
 
 Apply
 
@@ -36,7 +59,7 @@ A_1=
 \end{pmatrix}.
 $$
 
-## 2. Second row operation
+### 2. Second row operation
 
 Apply to the current matrix
 
@@ -61,7 +84,7 @@ A_2=
 \end{pmatrix}.
 $$
 
-## 3. Third row operation
+### 3. Third row operation
 
 Interchange the second and third rows:
 
@@ -80,7 +103,7 @@ A_3=
 \end{pmatrix}.
 $$
 
-## 4. Inverse operations
+### 4. Inverse operations
 
 Each operation can be reversed:
 
@@ -94,7 +117,7 @@ Adding a multiple of another row is reversed by subtracting
 the same multiple. Swapping two rows is reversed by swapping
 them again.
 
-## Verification
+### Verification
 
 To recover A from the final matrix, undo the operations
 in reverse order.

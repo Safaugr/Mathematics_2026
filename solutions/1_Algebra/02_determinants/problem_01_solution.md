@@ -1,5 +1,25 @@
 # Exercise 1. Determinant of a 2-by-2 Matrix
 
+## Question
+
+Compute
+
+$$
+\det
+\begin{pmatrix}
+3 & -2 \\
+5 & 4 \\
+\end{pmatrix},\qquad \det
+\begin{pmatrix}
+1 & 7 \\
+2 & 14 \\
+\end{pmatrix}.
+$$
+
+Which matrix is invertible? Justify your answer.
+
+## Solution
+
 For a 2-by-2 matrix, the determinant is
 
 $$
@@ -10,7 +30,7 @@ c & d \\
 =ad-bc.
 $$
 
-## 1. First matrix
+### 1. First matrix
 
 Let
 
@@ -30,7 +50,7 @@ $$
 
 Since the determinant is nonzero, A is invertible.
 
-## 2. Second matrix
+### 2. Second matrix
 
 Let
 
@@ -50,7 +70,7 @@ $$
 
 Since the determinant is zero, B is not invertible.
 
-## 3. Verification
+### 3. Verification
 
 For A, the inverse formula gives
 
@@ -81,7 +101,7 @@ For B, the second row is twice the first row.
 The rows are linearly dependent, confirming that
 the determinant is zero and the matrix is not invertible.
 
-## Conclusion
+### Conclusion
 
 Only the first matrix is invertible:
 its determinant is 22, while the second determinant is 0.

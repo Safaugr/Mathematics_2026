@@ -1,5 +1,21 @@
 # Exercise 6. Parameter and Invertibility
 
+## Question
+
+For
+
+$$
+A(t)=
+\begin{pmatrix}
+t & 1 \\
+2 & t \\
+\end{pmatrix}
+$$
+
+find all values of $t$ for which the matrix is not invertible. Explain how your answer is related to the determinant being zero.
+
+## Solution
+
 The given matrix is
 
 $$
@@ -10,7 +26,7 @@ t & 1 \\
 \end{pmatrix}.
 $$
 
-## 1. Compute the determinant
+### 1. Compute the determinant
 
 For a 2-by-2 matrix, the determinant is ad-bc.
 Therefore,
@@ -19,7 +35,7 @@ $$
 \det A(t)=t\cdot t-1\cdot2=t^2-2.
 $$
 
-## 2. Find when the inverse does not exist
+### 2. Find when the inverse does not exist
 
 A square matrix is not invertible exactly when
 its determinant is zero.
@@ -44,7 +60,7 @@ $$
 t=\sqrt{2},\qquad t=-\sqrt{2}.
 $$
 
-## 3. Verification using row dependence
+### 3. Verification using row dependence
 
 For either exceptional value, t^2=2, so
 
@@ -59,7 +75,7 @@ the matrix is not invertible.
 For all other real values of t, the determinant is nonzero,
 so the matrix is invertible.
 
-## Conclusion
+### Conclusion
 
 $$
 A(t)\ \mathrm{is\ not\ invertible}

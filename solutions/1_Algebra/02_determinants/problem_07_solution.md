@@ -1,12 +1,24 @@
 # Exercise 7. Using Properties Instead of Recomputing
 
+## Question
+
+Suppose that for a $3\times3$ matrix, $\det A=-4$. Compute
+
+$$
+\det(2A),\qquad \det(A^T),\qquad \det(A^2),\qquad \det(-A).
+$$
+
+Justify each answer using the appropriate property.
+
+## Solution
+
 The matrix A has size $3\times3$, and
 
 $$
 \det A=-4.
 $$
 
-## 1. Determinant of 2A
+### 1. Determinant of 2A
 
 For an n-by-n matrix, multiplying every entry by a scalar k
 multiplies the determinant by k^n.
@@ -18,7 +30,7 @@ $$
 \det(2A)=2^3\det A=8(-4)=-32.
 $$
 
-## 2. Determinant of the transpose
+### 2. Determinant of the transpose
 
 Transposition does not change the determinant:
 
@@ -26,7 +38,7 @@ $$
 \det(A^T)=\det A=-4.
 $$
 
-## 3. Determinant of the square
+### 3. Determinant of the square
 
 The determinant of a product equals the product
 of the determinants:
@@ -35,7 +47,7 @@ $$
 \det(A^2)=\det(AA)=\det A\cdot\det A=(-4)^2=16.
 $$
 
-## 4. Determinant of -A
+### 4. Determinant of -A
 
 Multiplying all three rows by -1 gives
 
@@ -43,7 +55,7 @@ $$
 \det(-A)=(-1)^3\det A=(-1)(-4)=4.
 $$
 
-## Summary
+### Summary
 
 | Expression | Determinant |
 |---|---:|
@@ -52,7 +64,7 @@ $$
 | A squared | 16 |
 | -A | 4 |
 
-## Verification
+### Verification
 
 Since $(-A)(-A)=A^2$, the product property requires
 

@@ -1,5 +1,27 @@
 # Exercise 14. Rotation Matrices
 
+## Question
+
+The matrix for a rotation through an angle $\theta$ is
+
+$$
+R(\theta)=
+\begin{pmatrix}
+\cos\theta & -\sin\theta \\
+\sin\theta & \cos\theta \\
+\end{pmatrix}.
+$$
+
+Compute $R(\alpha)R(\beta)$ and, using the angle-sum formulas for sine and cosine, show that
+
+$$
+R(\alpha)R(\beta)=R(\alpha+\beta).
+$$
+
+Explain the result geometrically.
+
+## Solution
+
 The matrix for a rotation through an angle theta is
 
 $$
@@ -10,7 +32,7 @@ R(\theta)=
 \end{pmatrix}.
 $$
 
-## 1. Multiplying the rotation matrices
+### 1. Multiplying the rotation matrices
 
 Using row-by-column multiplication,
 
@@ -32,7 +54,7 @@ R(\alpha)R(\beta)=
 \end{pmatrix}.
 $$
 
-## 2. Applying the angle-sum formulas
+### 2. Applying the angle-sum formulas
 
 The trigonometric identities are
 
@@ -57,7 +79,7 @@ R(\alpha)R(\beta)=
 =R(\alpha+\beta).
 $$
 
-## 3. Geometric interpretation
+### 3. Geometric interpretation
 
 In the product R(alpha)R(beta), the rightmost matrix acts first.
 
@@ -67,7 +89,7 @@ while its length remains unchanged.
 
 Therefore, the composition is a rotation through alpha+beta.
 
-## Verification with a numerical example
+### Verification with a numerical example
 
 Take
 

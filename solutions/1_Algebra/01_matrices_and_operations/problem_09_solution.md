@@ -1,5 +1,36 @@
 # Exercise 9. Composing Transformations
 
+## Question
+
+Let
+
+$$
+S=
+\begin{pmatrix}
+2 & 0 \\
+0 & 1 \\
+\end{pmatrix},\qquad R=
+\begin{pmatrix}
+0 & -1 \\
+1 & 0 \\
+\end{pmatrix}.
+$$
+
+The matrix $S$ describes nonuniform scaling, while $R$ describes a $90^\circ$ counterclockwise rotation.
+For
+
+$$
+x=
+\begin{pmatrix}
+1 \\
+2 \\
+\end{pmatrix}
+$$
+
+compute $RSx$ and $SRx$. Compare the results and explain geometrically why the order of these transformations matters.
+
+## Solution
+
 The given matrices and vector are
 
 $$
@@ -28,7 +59,7 @@ R rotates a vector through 90 degrees counterclockwise.
 In a product acting on a vector, the rightmost transformation
 is applied first.
 
-## 1. Computing RSx
+### 1. Computing RSx
 
 First apply S:
 
@@ -62,7 +93,7 @@ RSx=R(Sx)=
 \end{pmatrix}.
 $$
 
-## 2. Computing SRx
+### 2. Computing SRx
 
 First apply R:
 
@@ -96,7 +127,7 @@ SRx=S(Rx)=
 \end{pmatrix}.
 $$
 
-## 3. Geometric comparison
+### 3. Geometric comparison
 
 Scaling first sends $(1,2)$ to $(2,2)$.
 Rotating this vector then gives $(-2,2)$.
@@ -114,7 +145,7 @@ $$
 RSx\ne SRx.
 $$
 
-## Verification using matrix products
+### Verification using matrix products
 
 Direct multiplication gives
 

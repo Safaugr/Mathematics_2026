@@ -1,11 +1,34 @@
 # Exercise 1. Matrix Size and Entries
 
-## 1. Matrix sizes
+## Question
+
+Given
+
+$$
+A=
+\begin{pmatrix}
+2 & -1 & 3 \\
+0 & 4 & 5 \\
+\end{pmatrix},\qquad B=
+\begin{pmatrix}
+1 & 0 \\
+-2 & 3 \\
+4 & 1 \\
+\end{pmatrix}.
+$$
+
+1. State the sizes of matrices $A$ and $B$.
+2. Read off the entries $a_{12}$, $a_{23}$, $b_{21}$, and $b_{32}$.
+3. Write the second row of $A$ and the first column of $B$ as vectors.
+
+## Solution
+
+### 1. Matrix sizes
 
 Matrix A has 2 rows and 3 columns, so its size is $2\times3$.
 Matrix B has 3 rows and 2 columns, so its size is $3\times2$.
 
-## 2. Matrix entries
+### 2. Matrix entries
 
 The first index indicates the row, and the second indicates the column.
 
@@ -14,7 +37,7 @@ The first index indicates the row, and the second indicates the column.
 - $b_{21}=-2$: row 2, column 1 of B.
 - $b_{32}=1$: row 3, column 2 of B.
 
-## 3. Row and column vectors
+### 3. Row and column vectors
 
 The second row of A is
 
@@ -34,7 +57,7 @@ $$
 \end{pmatrix}.
 $$
 
-## Verification
+### Verification
 
 The row vector has 3 entries, matching the number of columns of A.
 The column vector has 3 entries, matching the number of rows of B.

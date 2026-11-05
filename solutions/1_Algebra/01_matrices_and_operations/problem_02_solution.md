@@ -1,6 +1,32 @@
 # Exercise 2. Addition and Scalar Multiplication
 
-## Method
+## Question
+
+For
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 \\
+-1 & 3 \\
+\end{pmatrix},\qquad B=
+\begin{pmatrix}
+4 & -2 \\
+0 & 5 \\
+\end{pmatrix}
+$$
+
+compute
+
+$$
+A+B,\qquad A-B,\qquad 3A-2B.
+$$
+
+Explain why matrix addition is possible only for matrices of the same size.
+
+## Solution
+
+### Method
 
 Addition and subtraction are performed entry by entry.
 Scalar multiplication multiplies every entry by the scalar.
@@ -21,7 +47,7 @@ B=
 \end{pmatrix}.
 $$
 
-## 1. Addition
+### 1. Addition
 
 Add the entries in matching positions:
 
@@ -37,7 +63,7 @@ A+B=
 \end{pmatrix}.
 $$
 
-## 2. Subtraction
+### 2. Subtraction
 
 Subtract each entry of B from the corresponding entry of A:
 
@@ -53,7 +79,7 @@ A-B=
 \end{pmatrix}.
 $$
 
-## 3. Scalar multiplication and subtraction
+### 3. Scalar multiplication and subtraction
 
 Multiply every entry of A by 3 and every entry of B by 2:
 
@@ -85,7 +111,7 @@ $$
 \end{pmatrix}.
 $$
 
-## 4. Why the sizes must match
+### 4. Why the sizes must match
 
 Matrix addition pairs entries in the same row and column.
 The matrices must have the same number of rows and columns
@@ -94,7 +120,7 @@ so that every entry has a corresponding entry.
 Here, both matrices have size $2\times2$,
 so addition and subtraction are defined.
 
-## Verification
+### Verification
 
 Subtracting B from A+B recovers A:
 

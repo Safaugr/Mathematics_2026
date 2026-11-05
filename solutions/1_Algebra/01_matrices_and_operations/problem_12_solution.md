@@ -1,5 +1,21 @@
 # Exercise 12. Formula for a Matrix Power
 
+## Question
+
+Let
+
+$$
+A=
+\begin{pmatrix}
+1 & 1 \\
+0 & 1 \\
+\end{pmatrix}.
+$$
+
+Compute $A^2$, $A^3$, and $A^4$, and use them to formulate a conjecture for $A^n$. Then do not stop after checking one more case: assume the formula is true for $n$, multiply by $A$, and explain why you obtain exactly the formula for $n+1$.
+
+## Solution
+
 The given matrix is
 
 $$
@@ -10,7 +26,7 @@ A=
 \end{pmatrix}.
 $$
 
-## 1. Computing successive powers
+### 1. Computing successive powers
 
 Using matrix multiplication,
 
@@ -66,7 +82,7 @@ A^4=A^3A=
 \end{pmatrix}.
 $$
 
-## 2. Conjecture
+### 2. Conjecture
 
 The diagonal entries remain 1, and the lower-left entry
 remains 0. The upper-right entry increases by 1 each time.
@@ -81,9 +97,9 @@ A^n=
 \end{pmatrix}.
 $$
 
-## 3. Proof by mathematical induction
+### 3. Proof by mathematical induction
 
-### Base case
+#### Base case
 
 For $n=1$, the formula gives
 
@@ -98,7 +114,7 @@ $$
 
 Thus, the formula holds for n=1.
 
-### Induction step
+#### Induction step
 
 Assume the formula holds for some integer $n\ge1$:
 
@@ -131,7 +147,7 @@ $$
 This is exactly the proposed formula with n replaced by n+1.
 Therefore, the formula holds for every integer $n\ge1$.
 
-## Verification at n=0
+### Verification at n=0
 
 The same formula also gives the identity matrix at n=0:
 

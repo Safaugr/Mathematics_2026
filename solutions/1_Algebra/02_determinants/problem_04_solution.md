@@ -1,5 +1,22 @@
 # Exercise 4. Triangular Matrix
 
+## Question
+
+Without expanding the determinant, compute
+
+$$
+\det
+\begin{pmatrix}
+2 & 4 & 1 \\
+0 & -3 & 5 \\
+0 & 0 & 7 \\
+\end{pmatrix}.
+$$
+
+State the rule for an arbitrary triangular matrix and explain it using this example.
+
+## Solution
+
 The given matrix is
 
 $$
@@ -11,7 +28,7 @@ A=
 \end{pmatrix}.
 $$
 
-## Method
+### Method
 
 A is upper triangular because all entries below
 the main diagonal are zero.
@@ -23,7 +40,7 @@ $$
 \det A=\prod_{i=1}^{n}a_{ii}.
 $$
 
-## Calculation
+### Calculation
 
 The diagonal entries are 2, -3, and 7. Therefore,
 
@@ -31,7 +48,7 @@ $$
 \det A=2\cdot(-3)\cdot7=-42.
 $$
 
-## Explanation
+### Explanation
 
 In the determinant formula, each term selects one entry
 from every row and every column.
@@ -45,7 +62,7 @@ The same reasoning applies to a lower triangular matrix.
 Thus, the entries 4, 1, and 5 above the diagonal
 do not affect this determinant.
 
-## Verification
+### Verification
 
 The diagonal entries have absolute values 2, 3, and 7,
 whose product is 42. Exactly one diagonal entry is negative,

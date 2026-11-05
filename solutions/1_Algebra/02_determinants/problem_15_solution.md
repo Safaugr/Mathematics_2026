@@ -1,5 +1,23 @@
 # Exercise 15. Combining Determinant Properties
 
+## Question
+
+Let $A$ and $B$ be invertible $2\times2$ matrices with
+
+$$
+\det A=-2,\qquad \det B=3.
+$$
+
+Without finding the entries of the matrices, compute
+
+$$
+\det\left(B^{-1}A^TB\right).
+$$
+
+State the determinant properties you use in order and explain why the factors involving $B$ eventually cancel.
+
+## Solution
+
 A and B are invertible 2-by-2 matrices with
 
 $$
@@ -12,7 +30,7 @@ $$
 \det(B^{-1}A^TB).
 $$
 
-## 1. Apply the product property
+### 1. Apply the product property
 
 The determinant of a product is the product
 of the determinants:
@@ -22,7 +40,7 @@ $$
 =\det(B^{-1})\det(A^T)\det B.
 $$
 
-## 2. Apply the inverse and transpose properties
+### 2. Apply the inverse and transpose properties
 
 Since B is invertible,
 
@@ -44,7 +62,7 @@ $$
 =-2.
 $$
 
-## 3. Why the B factors cancel
+### 3. Why the B factors cancel
 
 The factors involving B are scalar numbers and satisfy
 
@@ -59,7 +77,7 @@ Thus, the expression reduces to the determinant of A.
 This cancellation occurs among scalar determinants.
 It does not require rearranging the matrix factors.
 
-## Verification
+### Verification
 
 Let
 

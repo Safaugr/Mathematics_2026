@@ -1,5 +1,23 @@
 # Exercise 3. When Can Matrices Be Multiplied?
 
+## Question
+
+The matrix sizes are
+
+$$
+A_{2\times3},\qquad B_{3\times4},\qquad C_{4\times2},\qquad D_{2\times2}.
+$$
+
+For the products
+
+$$
+AB,\ BA,\ BC,\ CB,\ AC,\ CA,\ AD,\ DA
+$$
+
+determine whether they are defined. If so, state the size of the result. Justify each decision using the dimension compatibility condition.
+
+## Solution
+
 The given matrix sizes are:
 
 - A: $2\times3$
@@ -7,7 +25,7 @@ The given matrix sizes are:
 - C: $4\times2$
 - D: $2\times2$
 
-## Rule
+### Rule
 
 A matrix product is defined when the number of columns
 of the first matrix equals the number of rows of the second.
@@ -15,7 +33,7 @@ of the first matrix equals the number of rows of the second.
 If the sizes are $(m\times n)(n\times p)$,
 the product has size $m\times p$.
 
-## Results
+### Results
 
 | Product | Sizes | Compatibility | Result |
 |---|---|---|---|
@@ -28,7 +46,7 @@ the product has size $m\times p$.
 | AD | $(2\times3)(2\times2)$ | $3\ne2$ | Not defined |
 | DA | $(2\times2)(2\times3)$ | $2=2$ | Defined: $2\times3$ |
 
-## Explanation and Verification
+### Explanation and Verification
 
 Each entry of a product is the dot product of a row
 of the first matrix and a column of the second.

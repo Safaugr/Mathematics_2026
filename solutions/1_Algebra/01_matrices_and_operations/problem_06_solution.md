@@ -1,5 +1,30 @@
 # Exercise 6. Transpose
 
+## Question
+
+For
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+\end{pmatrix},\qquad B=
+\begin{pmatrix}
+1 & 0 \\
+2 & 1 \\
+-1 & 3 \\
+\end{pmatrix}
+$$
+
+compute $A^T$, $B^T$, and $AB$. Then verify in this example that
+
+$$
+(AB)^T=B^TA^T.
+$$
+
+## Solution
+
 The given matrices are
 
 $$
@@ -17,7 +42,7 @@ B=
 \end{pmatrix}.
 $$
 
-## 1. Transposes
+### 1. Transposes
 
 Transposition turns each row into the corresponding column.
 
@@ -39,7 +64,7 @@ $$
 A has size $2\times3$, so its transpose has size $3\times2$.
 B has size $3\times2$, so its transpose has size $2\times3$.
 
-## 2. Computing AB
+### 2. Computing AB
 
 Multiply each row of A by each column of B:
 
@@ -65,7 +90,7 @@ $$
 \end{pmatrix}.
 $$
 
-## 3. Computing the product of the transposes
+### 3. Computing the product of the transposes
 
 $$
 B^TA^T=
@@ -88,7 +113,7 @@ B^TA^T=
 \end{pmatrix}.
 $$
 
-## Verification and Explanation
+### Verification and Explanation
 
 Both calculations give exactly the same matrix, so
 

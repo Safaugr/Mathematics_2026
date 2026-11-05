@@ -1,5 +1,30 @@
 # Exercise 15. Associativity of Multiplication and Different Calculation Paths
 
+## Question
+
+Given
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 & 0 \\
+0 & 1 & 1 \\
+\end{pmatrix},\quad B=
+\begin{pmatrix}
+1 & 0 \\
+2 & 1 \\
+-1 & 3 \\
+\end{pmatrix},\quad C=
+\begin{pmatrix}
+2 & 1 \\
+0 & -1 \\
+\end{pmatrix}.
+$$
+
+Compute $(AB)C$ and $A(BC)$. Compare the results and the number of intermediate operations. Explain what associativity of matrix multiplication means in this example.
+
+## Solution
+
 The given matrices are
 
 $$
@@ -23,7 +48,7 @@ C=
 \end{pmatrix}.
 $$
 
-## 1. Computing (AB)C
+### 1. Computing (AB)C
 
 First compute AB:
 
@@ -61,7 +86,7 @@ $$
 \end{pmatrix}.
 $$
 
-## 2. Computing A(BC)
+### 2. Computing A(BC)
 
 First compute BC:
 
@@ -111,7 +136,7 @@ A(BC)=
 \end{pmatrix}.
 $$
 
-## 3. Comparing the calculation paths
+### 3. Comparing the calculation paths
 
 For standard row-by-column multiplication, multiplying
 an m-by-n matrix by an n-by-p matrix requires mnp scalar
@@ -134,7 +159,7 @@ whereas BC has size $3\times2$.
 Under this counting method, computing AB first requires
 fewer scalar operations.
 
-## 4. Conclusion and verification
+### 4. Conclusion and verification
 
 Both calculation paths give
 

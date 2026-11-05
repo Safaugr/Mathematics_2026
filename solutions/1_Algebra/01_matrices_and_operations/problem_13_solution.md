@@ -1,5 +1,37 @@
 # Exercise 13. A Recurrence Written in Matrix Form
 
+## Question
+
+Let
+
+$$
+F=
+\begin{pmatrix}
+1 & 1 \\
+1 & 0 \\
+\end{pmatrix}.
+$$
+
+Compute $F^2$, $F^3$, $F^4$, and $F^5$. Compare the numbers obtained with the sequence
+
+$$
+0,1,1,2,3,5,8,\ldots
+$$
+
+and describe the relationship you observe. Then compute
+
+$$
+F
+\begin{pmatrix}
+a \\
+b \\
+\end{pmatrix}
+$$
+
+and explain how this multiplication performs one recurrence step: it creates the sum of two consecutive terms and keeps one of them for the next step.
+
+## Solution
+
 The given matrix is
 
 $$
@@ -10,7 +42,7 @@ F=
 \end{pmatrix}.
 $$
 
-## 1. Computing successive powers
+### 1. Computing successive powers
 
 Using row-by-column multiplication,
 
@@ -82,7 +114,7 @@ F^5=F^4F=
 \end{pmatrix}.
 $$
 
-## 2. Connection with the Fibonacci sequence
+### 2. Connection with the Fibonacci sequence
 
 Define the Fibonacci numbers by
 
@@ -110,7 +142,7 @@ $$
 
 For example, F^5 contains $f_6=8$, $f_5=5$, and $f_4=3$.
 
-## 3. One recurrence step
+### 3. One recurrence step
 
 For any numbers a and b,
 
@@ -141,7 +173,7 @@ $$
 Thus, multiplying by F advances a pair of consecutive
 Fibonacci numbers by one step.
 
-## Verification of the general pattern
+### Verification of the general pattern
 
 For n=1, the proposed formula gives F.
 

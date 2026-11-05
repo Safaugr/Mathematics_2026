@@ -1,5 +1,25 @@
 # Exercise 11. When Do Matrices Commute?
 
+## Question
+
+Given
+
+$$
+A=
+\begin{pmatrix}
+1 & 1 \\
+0 & 1 \\
+\end{pmatrix},\qquad B=
+\begin{pmatrix}
+a & b \\
+c & d \\
+\end{pmatrix}.
+$$
+
+Find the conditions on $a,b,c,d$ under which $AB=BA$. Describe the general form of all such matrices $B$.
+
+## Solution
+
 The given matrices are
 
 $$
@@ -16,7 +36,7 @@ c & d \\
 \end{pmatrix}.
 $$
 
-## 1. Computing AB
+### 1. Computing AB
 
 Using the row-by-column multiplication rule,
 
@@ -28,7 +48,7 @@ c & d \\
 \end{pmatrix}.
 $$
 
-## 2. Computing BA
+### 2. Computing BA
 
 $$
 BA=
@@ -38,7 +58,7 @@ c & c+d \\
 \end{pmatrix}.
 $$
 
-## 3. Comparing corresponding entries
+### 3. Comparing corresponding entries
 
 Two matrices are equal if and only if all corresponding
 entries are equal. Therefore, AB=BA requires
@@ -64,7 +84,7 @@ $$
 
 There is no restriction on a or b.
 
-## 4. General form and verification
+### 4. General form and verification
 
 Every possible matrix B must have the form
 

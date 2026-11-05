@@ -1,5 +1,25 @@
 # Exercise 5. Matrix Times Vector
 
+## Question
+
+Let
+
+$$
+A=
+\begin{pmatrix}
+2 & -1 \\
+1 & 3 \\
+\end{pmatrix},\qquad x=
+\begin{pmatrix}
+4 \\
+2 \\
+\end{pmatrix}.
+$$
+
+Compute $Ax$. Then express $Ax$ as a linear combination of the columns of $A$, with coefficients coming from the vector $x$.
+
+## Solution
+
 The given matrix and vector are
 
 $$
@@ -16,7 +36,7 @@ x=
 \end{pmatrix}.
 $$
 
-## 1. Computing Ax
+### 1. Computing Ax
 
 The matrix has size $2\times2$ and the vector has size $2\times1$.
 The product is therefore defined and has size $2\times1$.
@@ -35,7 +55,7 @@ Ax=
 \end{pmatrix}.
 $$
 
-## 2. Linear combination of the columns
+### 2. Linear combination of the columns
 
 The columns of A are
 
@@ -85,7 +105,7 @@ Ax=
 \end{pmatrix}.
 $$
 
-## Verification and Interpretation
+### Verification and Interpretation
 
 The row-by-column calculation and the linear combination
 of the columns both give the same vector, $(6,10)$.

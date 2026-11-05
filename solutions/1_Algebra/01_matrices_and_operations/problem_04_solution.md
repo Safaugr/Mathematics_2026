@@ -1,5 +1,25 @@
 # Exercise 4. Matrix Multiplication and Noncommutativity
 
+## Question
+
+For
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 \\
+0 & 1 \\
+\end{pmatrix},\qquad B=
+\begin{pmatrix}
+2 & 0 \\
+3 & 1 \\
+\end{pmatrix}
+$$
+
+compute $AB$ and $BA$. Is $AB=BA$? Use this example to explain what noncommutativity of matrix multiplication means.
+
+## Solution
+
 The given matrices are
 
 $$
@@ -16,7 +36,7 @@ B=
 \end{pmatrix}.
 $$
 
-## Method
+### Method
 
 Both matrices have size $2\times2$, so both products are defined.
 
@@ -24,7 +44,7 @@ Each entry of a product is calculated by multiplying
 corresponding entries of a row of the first matrix
 and a column of the second, then adding the results.
 
-## 1. Computing AB
+### 1. Computing AB
 
 $$
 AB=
@@ -38,7 +58,7 @@ AB=
 \end{pmatrix}.
 $$
 
-## 2. Computing BA
+### 2. Computing BA
 
 $$
 BA=
@@ -52,7 +72,7 @@ BA=
 \end{pmatrix}.
 $$
 
-## 3. Comparison
+### 3. Comparison
 
 The top-left entry of AB is 8, while the top-left entry of BA is 2.
 Therefore,
@@ -64,7 +84,7 @@ $$
 Matrix multiplication is not commutative in general:
 changing the order of the factors can change the result.
 
-## Verification
+### Verification
 
 Use the vector
 

@@ -1,5 +1,22 @@
 # Exercise 5. Row Operations
 
+## Question
+
+For
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 1 & 0 \\
+-1 & 4 & 2 \\
+\end{pmatrix}
+$$
+
+find $\det A$ by simplifying the matrix with row operations. At each step, indicate whether and how the determinant changes.
+
+## Solution
+
 The given matrix is
 
 $$
@@ -11,7 +28,7 @@ A=
 \end{pmatrix}.
 $$
 
-## Method
+### Method
 
 Adding a multiple of one row to another row does not
 change the determinant.
@@ -19,7 +36,7 @@ change the determinant.
 We use these operations to obtain an upper triangular matrix,
 then multiply its diagonal entries.
 
-## 1. Eliminate the first entry of row 2
+### 1. Eliminate the first entry of row 2
 
 Apply
 
@@ -50,7 +67,7 @@ $$
 \det A_1=\det A.
 $$
 
-## 2. Eliminate the first entry of row 3
+### 2. Eliminate the first entry of row 3
 
 Apply
 
@@ -81,7 +98,7 @@ $$
 \det A_2=\det A.
 $$
 
-## 3. Eliminate the second entry of row 3
+### 3. Eliminate the second entry of row 3
 
 Using the current second row, apply
 
@@ -108,7 +125,7 @@ $$
 
 This operation also preserves the determinant.
 
-## 4. Compute the determinant
+### 4. Compute the determinant
 
 The final matrix is upper triangular, so
 
@@ -119,7 +136,7 @@ $$
 No rows were swapped or multiplied by a scalar,
 so no sign or scaling correction is needed.
 
-## Verification by expansion
+### Verification by expansion
 
 Expanding the original determinant along the first row gives
 

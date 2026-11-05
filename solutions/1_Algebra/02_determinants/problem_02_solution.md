@@ -1,5 +1,22 @@
 # Exercise 2. Determinant of a 3-by-3 Matrix
 
+## Question
+
+For
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 & -1 \\
+0 & 3 & 4 \\
+2 & 1 & 5 \\
+\end{pmatrix}
+$$
+
+compute $\det A$ using Sarrus' rule. Then perform one simple check using a chosen property of the determinant.
+
+## Solution
+
 The given matrix is
 
 $$
@@ -11,7 +28,7 @@ A=
 \end{pmatrix}.
 $$
 
-## 1. Sarrus' rule
+### 1. Sarrus' rule
 
 For a 3-by-3 matrix,
 
@@ -44,7 +61,7 @@ $$
 \det A=31-(-2)=33.
 $$
 
-## 2. Verification using row operations
+### 2. Verification using row operations
 
 Adding a multiple of another row to a row
 does not change the determinant.

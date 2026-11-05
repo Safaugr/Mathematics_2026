@@ -1,5 +1,30 @@
 # Exercise 12. A Parameter Revealed by a Row Operation
 
+## Question
+
+For
+
+$$
+A(t)=
+\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 4 & t \\
+0 & 1 & 1 \\
+\end{pmatrix}
+$$
+
+find the values of $t$ for which the matrix is not invertible.
+
+Before computing the determinant, perform the operation
+
+$$
+R_2\leftarrow R_2-2R_1
+$$
+
+and use the resulting structure. At the end, explain what special thing happens to the rows for the value of the parameter you found.
+
+## Solution
+
 The given matrix is
 
 $$
@@ -11,7 +36,7 @@ A(t)=
 \end{pmatrix}.
 $$
 
-## 1. Apply the suggested row operation
+### 1. Apply the suggested row operation
 
 Apply
 
@@ -36,7 +61,7 @@ $$
 \end{pmatrix}.
 $$
 
-## 2. Compute the determinant
+### 2. Compute the determinant
 
 Expand along the first column:
 
@@ -57,7 +82,7 @@ $$
 For every other real value of t, the determinant is nonzero,
 so the matrix is invertible.
 
-## 3. Row dependence at the exceptional value
+### 3. Row dependence at the exceptional value
 
 When t=6, the original second row is
 
@@ -71,7 +96,7 @@ row operation produces a zero row.
 
 This confirms that A(6) is not invertible.
 
-## Verification
+### Verification
 
 Expanding the original determinant along the first row gives
 

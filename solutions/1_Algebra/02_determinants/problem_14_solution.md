@@ -1,5 +1,21 @@
 # Exercise 14. A System of Equations and the Determinant
 
+## Question
+
+Consider the system $Ax=b$, where
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 \\
+k & 4 \\
+\end{pmatrix}.
+$$
+
+For which values of $k$ does the system have exactly one solution for every $b$? For the remaining value, give an example of a right-hand side $b$ for which the system has infinitely many solutions, and an example for which it has no solution.
+
+## Solution
+
 The coefficient matrix is
 
 $$
@@ -10,7 +26,7 @@ k & 4 \\
 \end{pmatrix}.
 $$
 
-## 1. Exactly one solution for every right-hand side
+### 1. Exactly one solution for every right-hand side
 
 The determinant is
 
@@ -27,7 +43,7 @@ $$
 k\ne2.
 $$
 
-## 2. The exceptional value
+### 2. The exceptional value
 
 When k=2, write the unknown vector as $(x_1,x_2)^T$.
 The system becomes
@@ -46,7 +62,7 @@ $$
 b_2=2b_1.
 $$
 
-## 3. Example with infinitely many solutions
+### 3. Example with infinitely many solutions
 
 Choose
 
@@ -91,7 +107,7 @@ $$
 
 Therefore, every real value of s gives a solution.
 
-## 4. Example with no solution
+### 4. Example with no solution
 
 Choose
 
@@ -120,7 +136,7 @@ $$
 
 This contradiction proves that no solution exists.
 
-## Conclusion
+### Conclusion
 
 For $k\ne2$, there is exactly one solution for every b.
 
